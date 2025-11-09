@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Miguer';
-  src: url('./resourses/miguersansregular-g3nqa.otf');
+  src: url('/resourses/miguersansregular-g3nqa.otf');
 }
 body{
     font-family: Miguer;
