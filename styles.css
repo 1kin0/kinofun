@@ -138,6 +138,7 @@ input::placeholder{
 .item-card h3{
     font-size: 15px;
     color: white;
+    text-shadow: 0px 0px 12px white;
 }
 .item-card p{
     color: #666;
