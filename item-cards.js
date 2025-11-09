@@ -29,7 +29,7 @@ function displayItems(itemsToShow) {
         card.dataset.category = item.category;
         card.innerHTML = `
             <h3>${item.name}</h3>
-            <img class='item-icon' src="/script_icon.png" alt="script">
+            <img class='item-icon' src="./resourses/script_icon.png" alt="script">
             <p class='description'>${item.description}</p>
             <p>price: ${item.price}$</p>
             <p>category: ${item.category}</p>
