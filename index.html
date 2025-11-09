@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>r6x.io</title>
+    <title>kino.store</title>
     <link rel="icon" type="image/x-icon" href="icons/logo.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a class="logo" href="#">r6x.io</a>
+    <a class="logo" href="#">kino.store</a>
 
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="search by">
-        <select name="search-select" id="search-type">
-            <option value="name">name</option>
-            <option value="tags">tags</option>
-            <option value="creator">creator</option>
-        </select>
     </div>
     
     <div class="filter-buttons">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="R6">R6</button>
-        <button class="filter-btn" data-filter="R15">R15</button>
+        <button class="filter-btn" data-filter="scripts">scripts</button>
+        <button class="filter-btn" data-filter="models">models</button>
+        <button class="filter-btn" data-filter="anims">anims</button>
     </div>
     
     <div class="items-grid" id="itemsGrid">
     </div>
 
-    <div class="copyright">
-        <p>If you have any copyright claims, please write to the contact email address <button class="copy" onclick="navigator.clipboard.writeText('contact@r6x.io');">contact@r6x.io</button></p>
-        <p>2025</p>
-    </div>
+    <footer>
+        <p>If you have any copyright claims, please write to the contact email address <button class="inline-button" onclick="navigator.clipboard.writeText('contact@mail');">contact@mail</button></p>
+        <p>2025 by <button class="inline-button" onclick="window.open('https://www.roblox.com/users/2254875642/profile');">kino</button></p>
+    </footer>
 
+    <svg viewBox="0 0 1920 1080" xmlns='http://www.w3.org/2000/svg'>
+        <filter id='noiseFilter'>
+            <feTurbulence 
+            type='fractalNoise' 
+            baseFrequency='0.6' 
+            numOctaves='3' 
+            stitchTiles='stitch' />
+
+        </filter>
+        <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+    </svg>
     <canvas id="gradientCanvas"></canvas>
     <script src="item-cards.js"></script>
     <script src="gradient.js"></script>
