@@ -1,5 +1,5 @@
 const items = [
-    { id: 1000, name: 'novement+', price: 2.4, description: 'the set of scripts that allow you to achieve a super smooth and realistic movement system at all', category: 'scripts' },
+    { id: 1000, name: 'movement+', price: 2.4, description: 'the set of scripts that allow you to achieve a super smooth and realistic movement system at all', category: 'scripts' },
     { id: 2000, name: 'typing+', price: 1.8, description: 'the module allows you to improve any text in your game by adding various animations for letters, text appearance, and disappearance.', category: 'scripts' },
     { id: 3000, name: 'voice+', price: 2, description: 'integrate a custom voice chat system into the game that allows you to apply voice filters such as reverb, chorus, and more', category: 'scripts' },
     { id: 4000, name: 'smooth mouse', price: 0.8, description: 'the simple script that allows you to smoothly zoom in and out with the mouse wheel', category: 'scripts' },
