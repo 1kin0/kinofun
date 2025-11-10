@@ -1,9 +1,9 @@
 const items = [
-    { name: 'movement+', id: 'efe1d9ef', price: 2.3, description: 'the set of scripts that allow you to achieve a super smooth and realistic movement system at all', category: 'scripts' },
-    { name: 'typing+', id: '739c9345', price: 1.8, description: 'the module allows you to improve any text in your game by adding various animations for letters, text appearance, and disappearance.', category: 'scripts' },
-    { name: 'voice+',id: '4fa195d1', price: 2, description: 'integrate a custom voice chat system into the game that allows you to apply voice filters such as reverb, chorus, and more', category: 'scripts' },
-    { name: 'smooth mouse', id: 'e0ff1d3e', price: 0.8, description: 'the simple script that allows you to smoothly zoom in and out with the mouse wheel', category: 'scripts' },
-    { name: 'handcamera toolkit', id: '1393cd6c', price: 1.5, description: 'fun-made handcamera camera system, has a large number of first-person settings', category: 'scripts' },
+    { name: 'movement+', id: 'efe1d9', url: 'movement_plus', price: 2.3, description: 'the set of scripts that allow you to achieve a super smooth and realistic movement system at all', category: 'scripts' },
+    { name: 'typing+', id: '739c93', url: 'typing_plus', price: 1.8, description: 'the module allows you to improve any text in your game by adding various animations for letters, text appearance, and disappearance.', category: 'scripts' },
+    { name: 'voice+',id: '4fa195', url: 'voice_plus', price: 2, description: 'integrate a custom voice chat system into the game that allows you to apply voice filters such as reverb, chorus, and more', category: 'scripts' },
+    { name: 'smooth mouse', id: 'e0ff1d', url: 'smooth_mouse', price: 0.8, description: 'the simple script that allows you to smoothly zoom in and out with the mouse wheel', category: 'scripts' },
+    { name: 'handcamera toolkit', id: '1393cd', url: 'handcamera_toolkit', price: 1.5, description: 'fun-made handcamera camera system, has a large number of first-person settings', category: 'scripts' },
 ];
 
 const itemsGrid = document.getElementById('itemsGrid');
@@ -42,7 +42,7 @@ function displayItems(itemsToShow) {
         card.style.willChange = 'opacity, filter, transform';
         
         card.addEventListener('click', () => {
-            window.open('./pages/'+item.id)
+            window.open('./pages/'+item.url)
         })
 
         itemsGrid.appendChild(card);
