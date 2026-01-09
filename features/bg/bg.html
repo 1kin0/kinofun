@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:bg</title>
+    <link rel="stylesheet" href="/styles/style-main.css">
+    <link rel="icon" href="/resourses/images/web_icon.png">
+</head>
+<body>
+    <h1>:bg sandbox</h1>
+    <div class="range-controllers">
+        <p>CHANGE SOME VALUES 👇</p>
+
+        <div class="controller-info">
+            <label for="hue-rotate">hue-rotate:</label>
+            <span class="value">30</span>
+        </div>
+        <input type="range" id="hue-rotate" min="0" max="320" value="30">
+
+        <div class="controller-info">
+            <label for="grayscale">grayscale:</label>
+            <span class="value">0</span>
+        </div>
+        <input type="range" id="grayscale" min="0" max="100" value="0">
+
+        <div class="controller-info">
+            <label for="opacity">opacity:</label>
+            <span class="value">100</span>
+        </div>
+        <input type="range" id="opacity" min="0" max="100" value="100">
+
+        <div class="controller-info">
+            <label for="brightness">brightness:</label>
+            <span class="value">100</span>
+        </div>
+        <input type="range" id="brightness" min="0" max="200" value="100">
+
+        <button class="reset-button">♻️</button>
+    </div>
+</body>
+
+<canvas class="gradient-canvas" id="gradient-canvas"></canvas>
+<script src="/gradient.js"></script>
+<script src="./style-controller.js"></script>
+
+</html>

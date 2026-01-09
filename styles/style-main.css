@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Miguer';
+  src: url('/resourses/fonts/miguersansregular-g3nqa.otf');
+}
+
+body {
+  font-family: Miguer;
+  color: white;
+  text-align: center;
+  background: black;
+}
+
+.gradient-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: hue-rotate(30deg);
+}
+
+.range-controllers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 20%;
+  margin: auto;
+  margin-top: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+}
+
+.range-controllers input[type="range"] {
+  width: 92%;
+}
+
+.range-controllers .controller-info {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.range-controllers .reset-button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.range-controllers .reset-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
