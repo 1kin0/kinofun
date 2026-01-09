@@ -1,0 +1,25 @@
+.greeting {
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+}
+
+.pages {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    padding: 40px;
+    margin: auto;
+    width: 300px;
+}
+
+.pages-title {
+    text-align: left;
+}
+
+.pages-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}

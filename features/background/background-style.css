@@ -5,8 +5,8 @@
   transform: translate(-50%, -50%);
   width: 22%;
   padding: 30px;
-  background-color: rgba(157, 157, 157, 0.1);
-  backdrop-filter: blur(60px);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
 }
 
 .range-controllers input[type="range"] {
@@ -16,12 +16,15 @@
 .range-controllers .controller-info {
   padding-top: 20px;
   padding-bottom: 10px;
+  text-align: left;
+  width: 50%;
+  padding-left: 30px;
 }
 
 .range-controllers .reset-button {
   margin-top: 25px;
   padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(255, 255, 255, 0.07);
   border: none;
   color: white;
   cursor: pointer;
@@ -29,10 +32,10 @@
 }
 
 .range-controllers .reset-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.17);
 }
 
 .range-controllers .reset-button:active {
   transition: 35ms;
-  background-color: rgba(255, 255, 255, .45);
+  background-color: rgba(255, 255, 255, .5);
 }
