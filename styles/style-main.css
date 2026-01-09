@@ -3,6 +3,12 @@
   src: url('/resourses/fonts/miguersansregular-g3nqa.otf');
 }
 
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 body {
   font-family: Miguer;
   color: white;
@@ -20,58 +26,14 @@ body {
   filter: hue-rotate(50deg) opacity(.2);
 }
 
+.error-code, 
 .title:hover {
   .dots {
     animation: blink 1s infinite;
   }
 }
 
-.range-controllers {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 22%;
-  padding: 30px;
-  background-color: rgba(157, 157, 157, 0.1);
-  backdrop-filter: blur(60px);
-}
-
-.range-controllers input[type="range"] {
-  width: 95%;
-}
-
-.range-controllers .controller-info {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.range-controllers .reset-button {
-  margin-top: 25px;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.03);
-  border: none;
-  color: white;
-  cursor: pointer;
-  transition: 250ms;
-}
-
-.range-controllers .reset-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.range-controllers .reset-button:active {
-  transition: 35ms;
-  background-color: rgba(255, 255, 255, .45);
-}
-
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-a {
+.link {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   
@@ -84,8 +46,7 @@ a {
   transition: 250ms;
 }
 
-a:hover,
-a:focus {
+.link:hover {
   color: rgba(255, 255, 255, 0.3);
   background-size: 0 0.05em, 100% 0.05em;
 }

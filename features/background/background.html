@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:bg-sandbox</title>
+    <title>:background</title>
     <link rel="stylesheet" href="/styles/style-main.css">
+    <link rel="stylesheet" href="/features/background/background-style.css">
     <link rel="icon" href="/resourses/images/web_icon.png">
 </head>
 
 <body>
-    <h1 class="title"><span class="dots">:</span>bg-sandbox</h1>
+    <h1 class="title"><span class="dots">:</span>background</h1>
     <div class="range-controllers">
         <p>CHANGE SOME VALUES 👇</p>
 
@@ -35,7 +36,7 @@
             <label for="brightness">brightness:</label>
             <span class="value" id="brightness-value">100</span>
         </div>
-        <input type="range" id="brightness" min="0" max="200" value="100">
+        <input type="range" id="brightness" min="0" max="300" value="100">
 
         <div class="controller-info">
             <label for="blur">blur:</label>
@@ -49,6 +50,6 @@
 
 <canvas class="gradient-canvas" id="gradient-canvas"></canvas>
 <script src="/gradient.js"></script>
-<script src="./style-controller.js"></script>
+<script src="/features/background/canvas-controller.js"></script>
 
 </html>
