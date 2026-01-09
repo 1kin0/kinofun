@@ -21,19 +21,18 @@ body {
 }
 
 .range-controllers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22%;
   padding: 30px;
-  width: 20%;
-  margin: auto;
-  margin-top: 10%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(50px);
 }
 
 .range-controllers input[type="range"] {
-  width: 92%;
+  width: 95%;
 }
 
 .range-controllers .controller-info {
@@ -52,5 +51,10 @@ body {
 }
 
 .range-controllers .reset-button:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.range-controllers .reset-button:active {
+  transition: 35ms;
+  background-color: rgba(255, 255, 255, .45);
 }

@@ -13,30 +13,30 @@
         <p>CHANGE SOME VALUES 👇</p>
 
         <div class="controller-info">
-            <label for="hue-rotate">hue-rotate:</label>
-            <span class="value">30</span>
+            <label for="hue">hue-rotate:</label>
+            <span class="value" id="hue-value">30</span>
         </div>
-        <input type="range" id="hue-rotate" min="0" max="320" value="30">
+        <input type="range" id="hue" min="0" max="320" value="30">
 
         <div class="controller-info">
             <label for="grayscale">grayscale:</label>
-            <span class="value">0</span>
+            <span class="value" id="grayscale-value">0</span>
         </div>
         <input type="range" id="grayscale" min="0" max="100" value="0">
 
         <div class="controller-info">
             <label for="opacity">opacity:</label>
-            <span class="value">100</span>
+            <span class="value" id="opacity-value">100</span>
         </div>
         <input type="range" id="opacity" min="0" max="100" value="100">
 
         <div class="controller-info">
             <label for="brightness">brightness:</label>
-            <span class="value">100</span>
+            <span class="value" id="brightness-value">100</span>
         </div>
         <input type="range" id="brightness" min="0" max="200" value="100">
 
-        <button class="reset-button">♻️</button>
+        <button class="reset-button" id="reset-button">♻️</button>
     </div>
 </body>
 

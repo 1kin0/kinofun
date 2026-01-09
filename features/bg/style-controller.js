@@ -1,36 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
     const target = document.getElementById('gradient-canvas');
     const resetButton = document.getElementById('reset-button');
+    const sliders = document.querySelectorAll('input[type="range"]');
     
-    const huerotateSlider = document.getElementById('hue-rotate');
+    const hueSlider = document.getElementById('hue');
     const grayscaleSlider = document.getElementById('grayscale');
     const opacitySlider = document.getElementById('opacity');
     const brightnessSlider = document.getElementById('brightness');
 
     function updateFilter() {
-        const hue = huerotateSlider.value;
+        const hue = hueSlider.value;
         const grayscale = grayscaleSlider.value;
         const opacity = opacitySlider.value;
         const brightness = brightnessSlider.value;
         target.style.filter = `hue-rotate(${hue}deg) grayscale(${grayscale/100}) opacity(${opacity/100}) brightness(${brightness/100})`;
-    }
     
-    huerotateSlider.addEventListener('input', updateFilter);
+        sliders.forEach(slider => {
+                let valId = slider.id + '-value';
+                console.log(valId);
+                document.getElementById(valId).textContent = slider.value;
+            });
+    }
+
+    hueSlider.addEventListener('input', updateFilter);
     grayscaleSlider.addEventListener('input', updateFilter);
     opacitySlider.addEventListener('input', updateFilter);
     brightnessSlider.addEventListener('input', updateFilter);
-    
-    updateFilter();
 
     function resetSettings() {
-        huerotateSlider.value = 30;
+        hueSlider.value = 30;
         grayscaleSlider.value = 0;
         opacitySlider.value = 100;
         brightnessSlider.value = 100;
         updateFilter();
-        updateValues();
     }
 
     resetButton.addEventListener('click', resetSettings);
+
+    updateFilter();
 });
 
