@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:bg</title>
+    <title>:bg-sandbox</title>
     <link rel="stylesheet" href="/styles/style-main.css">
     <link rel="icon" href="/resourses/images/web_icon.png">
 </head>
+
 <body>
-    <h1>:bg sandbox</h1>
+    <h1 class="title"><span class="dots">:</span>bg-sandbox</h1>
     <div class="range-controllers">
         <p>CHANGE SOME VALUES 👇</p>
 
         <div class="controller-info">
             <label for="hue">hue-rotate:</label>
-            <span class="value" id="hue-value">30</span>
+            <span class="value" id="hue-value">50</span>
         </div>
-        <input type="range" id="hue" min="0" max="320" value="30">
+        <input type="range" id="hue" min="0" max="320" value="50">
 
         <div class="controller-info">
             <label for="grayscale">grayscale:</label>
@@ -26,15 +27,21 @@
 
         <div class="controller-info">
             <label for="opacity">opacity:</label>
-            <span class="value" id="opacity-value">100</span>
+            <span class="value" id="opacity-value">20</span>
         </div>
-        <input type="range" id="opacity" min="0" max="100" value="100">
+        <input type="range" id="opacity" min="0" max="100" value="20">
 
         <div class="controller-info">
             <label for="brightness">brightness:</label>
             <span class="value" id="brightness-value">100</span>
         </div>
         <input type="range" id="brightness" min="0" max="200" value="100">
+
+        <div class="controller-info">
+            <label for="blur">blur:</label>
+            <span class="value" id="blur-value">0</span>
+        </div>
+        <input type="range" id="blur" min="0" max="100" value="0">
 
         <button class="reset-button" id="reset-button">♻️</button>
     </div>
