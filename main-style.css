@@ -43,6 +43,30 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  backdrop-filter: blur(50px);
+  color: white;
+  transition: 250ms;
+  background: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.15)),
+    linear-gradient(to right, rgba(255, 255, 255, 0.7));
+  background-size: 100% 0.15em, 0 0.15em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-size: 0 0.15em, 100% 0.15em;;
+}
+
+button:active {
+  transition: 35ms;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .title {
   text-align: left;
 }

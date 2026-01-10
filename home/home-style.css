@@ -4,7 +4,7 @@
     padding: 30px;
 }
 
-.pages {
+.container {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(50px);
     padding: 40px;
@@ -12,11 +12,11 @@
     width: 300px;
 }
 
-.pages-title {
+.container-title {
     text-align: left;
 }
 
-.pages-list {
+.container-list {
     list-style: none;
     display: flex;
     flex-direction: column;

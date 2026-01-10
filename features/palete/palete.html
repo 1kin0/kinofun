@@ -5,12 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>:palete</title>
     <link rel="stylesheet" href="/main-style.css">
+    <link rel="stylesheet" href="/features/palete/palete-style.css">
     <link rel="icon" href="/resourses/images/web_icon.png">
 </head>
 
 <body>
     <a href="/"><h1 class="title"><span class="dots">:</span>palete</h1></a>
+    <div class="container">
+        <p class="guide">Here you can generate a beautiful palete using noise. Just touch the parameters and click generate 👇</p>
+
+        <div class="container-content">
+            <div class="view-box"></div>
+            <div class="controls">
+                <div class="colors">
+                    <label for="color1">COLOR1:</label>
+                    <input type="color" id="color1" value="#333333">
+
+                    <label for="color2">COLOR2:</label>
+                    <input type="color" id="color2" value="#e9d362">
+
+                    <label for="color3">COLOR3:</label>
+                    <input type="color" id="color3" value="#a73737">
+                </div>
+
+                <div class="params">
+                    <label style="display: inline" for="noise-type">TYPE:</label>
+                    <select name id="noise-type">
+                        <option value="1">FRACTAL</option>
+                        <option value="2">TURBULENCE</option>
+                    </select>
+
+                    <div class="params-range-inputs">
+                        <label for="frequency">FREQUENCY:</label>
+                        <input type="range" id="frequency" min="0" max="100" value="50">
+
+                        <label for="opacity">OPACITY:</label>
+                        <input type="range" id="opacity" min="0" max="100" value="50">
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+     <button class="gen-button">GENERATE</button>
 </body>
 
+<canvas class="gradient-canvas" id="gradient-canvas"></canvas>
+<script src="/gradient.js"></script>
 
 </html>

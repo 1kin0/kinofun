@@ -1,0 +1,87 @@
+.guide {
+    width: 500px;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    backdrop-filter:  blur(50px);
+    background-color: rgba(0, 0, 0, 0.2);
+    width: fit-content
+}
+
+.view-box {
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    background-color: rgb(39, 21, 21);
+}
+
+.container-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+input[type="color"] {
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
+select {
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.04);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+}
+
+.controls div {
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 10px;
+    padding: 20px;
+}
+
+.params-range-inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+.params-range-inputs input[type="range"] {
+    writing-mode: vertical-lr;
+    height: 270px;
+}
+
+.params-range-inputs label {
+    writing-mode: vertical-rl;
+}
+
+.gen-button {
+    width: 130px;
+    padding: 15px;
+    margin-top: 20px;
+}
