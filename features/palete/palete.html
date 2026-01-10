@@ -15,20 +15,33 @@
         <p class="guide">Here you can generate a beautiful palete using noise. Just touch the parameters and click generate 👇</p>
 
         <div class="container-content">
-            <div class="view-box"></div>
+            <div class="view-box">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+            </div>
+
             <div class="controls">
                 <div class="colors">
                     <label for="color1">COLOR1:</label>
-                    <input type="color" id="color1" value="#333333">
+                    <input type="color" id="color1" value="#61a9f6">
 
                     <label for="color2">COLOR2:</label>
-                    <input type="color" id="color2" value="#e9d362">
+                    <input type="color" id="color2" value="#c45050">
 
                     <label for="color3">COLOR3:</label>
-                    <input type="color" id="color3" value="#a73737">
+                    <input type="color" id="color3" value="#50c45c">
                 </div>
 
-                <div class="params">
+                <div class="gradient-params">
+                    <label for="">SCALE:</label>
+                    <input type="range" id="scale" min="0" max="1000" value="400">
+
+                     <label for="">BLUR:</label>
+                    <input type="range" id="blur" min="0" max="150" value="60">
+                </div>
+
+                <div class="noise-params">
                     <label style="display: inline" for="noise-type">TYPE:</label>
                     <select name id="noise-type">
                         <option value="1">FRACTAL</option>
