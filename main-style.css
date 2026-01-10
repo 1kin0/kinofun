@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Miguer';
-  src: url('/resourses/fonts/miguersansregular-g3nqa.otf');
+  src: url('/resources/fonts/miguer-sans.otf');
 }
 
 @keyframes blink {
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Miguer;
+  font-family: Miguer, Arial, sans-serif;
   color: white;
   text-align: center;
   background: black;
@@ -35,7 +35,7 @@ body {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 a {
@@ -59,7 +59,7 @@ button {
 
 button:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  background-size: 0 0.15em, 100% 0.15em;;
+  background-size: 0 0.15em, 100% 0.15em;
 }
 
 button:active {
