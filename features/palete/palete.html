@@ -15,7 +15,7 @@
         <p class="guide">Here you can generate a beautiful palete using noise. Just touch the parameters and click generate 👇</p>
 
         <div class="container-content">
-            <div class="view-box">
+            <div class="view-box" id="canvas">
                 <div class="circle1"></div>
                 <div class="circle2"></div>
                 <div class="circle3"></div>
@@ -61,10 +61,11 @@
         </div>
     </div>
 
-     <button class="gen-button">GENERATE</button>
+     <button class="gen-button" onclick="downloadDiv('canvas')">GENERATE</button>
 </body>
 
 <canvas class="gradient-canvas" id="gradient-canvas"></canvas>
 <script src="/gradient.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
+<script src="/features/palete/canvas-render.js"></script>
 </html>
