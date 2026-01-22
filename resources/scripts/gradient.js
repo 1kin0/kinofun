@@ -31,8 +31,9 @@ const fragmentShaderSource = `
     {
         const int ps = 0;
         
-        float x = fragCoord.x / iResolution.x * 640.;
-        float y = fragCoord.y / iResolution.y * 480.;
+        // Увеличенный масштаб (было 640x480, стало 320x240)
+        float x = fragCoord.x / iResolution.x * 320.;
+        float y = fragCoord.y / iResolution.y * 240.;
         
         if (ps > 0)
         {
@@ -40,13 +41,16 @@ const fragmentShaderSource = `
             y = float(int(y / float(ps)) * ps);
         }
         
-        float mov0 = x+y+sin(iTime)*10.+sin(x/90.)*70.+iTime*2.;
-        float mov1 = (mov0 / 5. + sin(mov0 / 30.))/ 10. + iTime * 3.;
-        float mov2 = mov1 + sin(mov1)*5. + iTime*1.0;
-        float cl1 = sin(sin(mov1/4. + iTime)+mov1);
-        float c1 = cl1 +mov2/2.-mov1-mov2+iTime;
-        float c2 = sin(c1+sin(mov0/100.+iTime)+sin(y/57.+iTime/50.)+sin((x+y)/200.)*2.);
-        float c3 = abs(sin(c2+cos((mov1+mov2+c2) / 10.)+cos((mov2) / 10.)+sin(x/80.)));
+        // Замедленная анимация (iTime / 5.0)
+        float slowTime = iTime / 5.0;
+        
+        float mov0 = x+y+sin(slowTime)*10.+sin(x/50.)*70.+slowTime * 2.;  // Было x/90, стало x/50
+        float mov1 = (mov0 / 5. + sin(mov0 / 20.))/ 10. + slowTime * 3.;   // Было /30, стало /20  
+        float mov2 = mov1 + sin(mov1)*5. + slowTime * 2.0;
+        float cl1 = sin(sin(mov1/4. + slowTime)+mov1);
+        float c1 = cl1 +mov2/2.-mov1-mov2+slowTime;
+        float c2 = sin(c1+sin(mov0/70.+slowTime)+sin(y/30.+slowTime/50.)+sin((x+y)/120.)*2.);  // Было /57,/200 стало /30,/120
+        float c3 = abs(sin(c2+cos((mov1+mov2+c2) / 10.)+cos((mov2) / 10.)+sin(x/50.)));         // Было /80 стало /50
         
         float dc = float(16-ps);
         
@@ -79,6 +83,7 @@ const fragmentShaderSource = `
     }
 `;
 
+// Остальной код без изменений
 function compileShader(gl, source, type) {
     const shader = gl.createShader(type);
     gl.shaderSource(shader, source);
