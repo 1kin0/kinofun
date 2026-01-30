@@ -3,14 +3,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 22%;
   padding: 30px;
+  width: 340px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(50px);
 }
 
 .range-controllers input[type="range"] {
-  width: 95%;
+  width: 93%;
 }
 
 .range-controllers .controller-info {
@@ -23,5 +23,4 @@
 
 .range-controllers .reset-button {
   margin-top: 25px;
-  padding: 10px 20px;
 }

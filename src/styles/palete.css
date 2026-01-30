@@ -1,6 +1,5 @@
 .guide {
-    width: 500px;
-    margin: 30px;
+
 }
 
 .container {
@@ -10,17 +9,18 @@
     margin: auto;
     backdrop-filter:  blur(50px);
     background-color: rgba(0, 0, 0, 0.2);
-    width: fit-content
+    width: fit-content;
 }
 
 .container-content {
     display: flex;
+    margin: 15px;
 }
 
 .view-box {
-    height: 400px;
-    width: 400px;
-    margin: 10px;
+    height: 370px;
+    width: 370px;
+    margin: 15px;
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     position: relative;
@@ -31,7 +31,7 @@
     height: 400px;
     border-radius: 50%;
     position: absolute;
-    filter: blur(60px);
+    filter: blur(50px);
 }
 
 .view-box .circle1 {
@@ -58,8 +58,8 @@
     
     div {
         background-color: rgba(255, 255, 255, 0.05);
-        margin: 10px;
-        padding: 20px;
+        margin: 15px;
+        padding: 25px;
     }
 }
 
@@ -77,8 +77,6 @@ input[type="range"] {
 }
 
 select {
-    /* width: 50%; */
-    padding: 10px;
     background-color: rgba(255, 255, 255, 0.04);
     color: white;
     border: none;
@@ -90,7 +88,7 @@ label {
     display: block;
     margin-top: 10px;
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     text-align: left;
 }
 
@@ -107,8 +105,6 @@ label {
 }
 
 .gen-button {
-    width: 130px;
-    padding: 15px;
     margin-top: 20px;
 }
 
