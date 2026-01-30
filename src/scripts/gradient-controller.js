@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     blurSlider.addEventListener('input', updateFilter);
 
     function resetSettings() {
-        hueSlider.value = 50;
+        hueSlider.value = 290;
         grayscaleSlider.value = 0;
-        opacitySlider.value = 20;
+        opacitySlider.value = 100;
         brightnessSlider.value = 100;
         blurSlider.value = 0;
         updateFilter();

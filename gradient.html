@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:gradient</title>
+    <title>gradient</title>
     <link rel="stylesheet" href="./src/styles/default.css">
     <link rel="stylesheet" href="./src/styles/gradient.css">
     <link rel="icon" href="./src/images/web_icon.png">
 </head>
 
 <body>
-    <a href="#"><h1 class="title"><span class="dots">:</span>gradient</h1></a>
+    <a href="index.html"><h1 class="title"><span class="dots">// </span>gradient</h1></a>
     <div class="range-controllers">
         <p>change some values 👇</p>
 
         <div class="controller-info">
             <label for="hue">HUE:</label>
-            <span class="value" id="hue-value">50</span>
+            <span class="value" id="hue-value">290</span>
         </div>
-        <input type="range" id="hue" min="0" max="320" value="50">
+        <input type="range" id="hue" min="0" max="360" value="290">
 
         <div class="controller-info">
             <label for="grayscale">GRAYSCALE:</label>
@@ -28,9 +28,9 @@
 
         <div class="controller-info">
             <label for="opacity">OPACITY:</label>
-            <span class="value" id="opacity-value">20</span>
+            <span class="value" id="opacity-value">100</span>
         </div>
-        <input type="range" id="opacity" min="0" max="100" value="20">
+        <input type="range" id="opacity" min="0" max="100" value="100">
 
         <div class="controller-info">
             <label for="brightness">BRIGHTNESS:</label>
@@ -49,7 +49,7 @@
 </body>
 
 <canvas class="gradient-canvas" id="gradient-canvas"></canvas>
-<script src="./src/gradient.js"></script>
+<script src="./src/scripts/gradient.js"></script>
 <script src="./src/scripts/gradient-controller.js"></script>
 
 </html>
