@@ -6,7 +6,7 @@
 
 .container {
     background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(50);
     padding: 40px;
     margin: auto;
     width: 270px;
